@@ -12,7 +12,7 @@ namespace Car_
         public string Model { get; set; }
         public string Brand { get; set; }
         public decimal Price { get; set; }
-        public decimal TaxPersantage { get; set; }
+        public static decimal TaxPersantage { get; set; }
 
         public decimal  CalculateTotal()
         {
