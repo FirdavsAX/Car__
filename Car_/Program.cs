@@ -10,17 +10,27 @@
             Car car4 = new Car(1121, "Cobalt", "Chevrolet", 180_000_000);
             Car car5 = new Car(1120, "KiaK5", "KIA", 300_000_000);
 
-            car1.TaxPersantage = 10;
-            car2.TaxPersantage = 10;
-            car3.TaxPersantage = 10;
-            car4.TaxPersantage = 10;
-            car5.TaxPersantage = 10;
+            car1.DisplayInfo();
+            car2.DisplayInfo();
+            car3.DisplayInfo();
+            car4.DisplayInfo();
+            car5.DisplayInfo();
+
+            Car.TaxPersantage = 10;
+            
+            car1.CalculateTotal();
+            car2.CalculateTotal();
+            car3.CalculateTotal();
+            car4.CalculateTotal();
+            car5.CalculateTotal();
 
             car1.DisplayInfo();
             car2.DisplayInfo();
             car3.DisplayInfo();
             car4.DisplayInfo();
             car5.DisplayInfo();
+
+            Console.ReadKey();
         }
     }
 }
