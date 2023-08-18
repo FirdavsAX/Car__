@@ -14,16 +14,16 @@ namespace Car_
         public decimal Price { get; set; }
         public static decimal TaxPersantage { get; set; }
 
-        public decimal  CalculateTotal()
+        public void  CalculateTotal()
         {
-            return Price + Price * TaxPersantage / 100;
+            Price = Price + Price * TaxPersantage / 100;
         }
         public void DisplayInfo()
         {
             Console.WriteLine("Car \nBrand : " + Brand);
             Console.WriteLine("Price : " + Price);
             Console.WriteLine("Model : " + Model);
-            Console.WriteLine("price with taxes : " + CalculateTotal());
+            Console.WriteLine();
         }
         public Car(int iD, string model, string brand, decimal price)
         {
